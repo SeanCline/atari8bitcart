@@ -1,0 +1,35 @@
+Nets: (One line per net. Format is Component-Pin.)
+	Cart-1 U1-20 U1-22
+	Cart-2 U0-7 U1-7
+	Cart-3 U0-8 U1-8
+	Cart-4 U0-9 U1-9
+	Cart-5 U0-10 U1-10
+	Cart-6 U0-16 U1-16
+	Cart-7 U0-17 U1-17
+	Cart-8 U0-13 U1-13
+	Cart-9 U0-12 U1-12
+	Cart-10 U0-11 U1-11
+	Cart-11 U0-18 U1-18
+	Cart-12 U0-20 U0-22
+	Cart-13 Cart-14 Cart-A U0-1 U0-27 U0-28 U1-1 U1-27 U1-28 C0-1
+	Cart-15 NC
+	Cart-B U0-14 U1-14 C0-0
+	Cart-C U0-6 U1-6
+	Cart-D U0-5 U1-5
+	Cart-E U0-4 U1-4
+	Cart-F U0-3 U1-3
+	Cart-H U0-25 U1-25
+	Cart-J U0-24 U1-24
+	Cart-K U0-2 U1-2
+	Cart-L U0-15 U1-15
+	Cart-M U0-19 U1-19
+	Cart-N U0-23 U1-23
+	Cart-P U0-21 U1-21
+	Cart-R NC
+	Cart-S NC
+
+Components:
+	U0: ROM 0, the right ROM on the component side of the PCB.
+	U1: ROM 1, the left ROM on the component side of the PCB.
+	C0: A 100nF bypass cap.
+	Cart: The cart edge connector. 1-15 on the component side. A-S on the circuit side. (G,I,O,Q omitted for legibility)
