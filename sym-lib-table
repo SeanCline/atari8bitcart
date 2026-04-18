@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "Atari_8-bit") (type "KiCad") (uri "${KIPRJMOD}/Atari_8-bit.kicad_sym") (options "") (descr ""))
+)
