@@ -135,7 +135,7 @@
 	(footprint "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 		(layer "F.Cu")
 		(uuid "2e09a88b-7cdb-4532-98d1-168c89c09b68")
-		(at 150.35 90.5)
+		(at 107.283829 108.693226)
 		(descr "SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, open")
 		(tags "solder jumper open")
 		(property "Reference" "JP4"
@@ -405,7 +405,7 @@
 	(footprint "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 		(layer "F.Cu")
 		(uuid "36c5b355-8449-4f8e-9286-e5b8e1ed49c6")
-		(at 150.85 110)
+		(at 94.462247 108.840994)
 		(descr "SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, open")
 		(tags "solder jumper open")
 		(property "Reference" "JP3"
@@ -675,11 +675,11 @@
 	(footprint "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "5a8f9065-440a-48b8-9e00-4ccc47f85935")
-		(at 132.873 62.5 -90)
+		(at 109.22 62.5 -90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=7.5*5.0mm^2, Capacitor, http://www.vishay.com/docs/28535/vy2series.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 7.5mm width 5.0mm Capacitor")
 		(property "Reference" "C0"
-			(at 2.5 -3.75 90)
+			(at 1.738 -0.067 180)
 			(layer "F.SilkS")
 			(uuid "e5a9bef7-851f-42a0-87ad-7766375af13d")
 			(effects
@@ -849,13 +849,13 @@
 	(footprint "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 		(layer "F.Cu")
 		(uuid "7619e02b-4ca9-4f98-8a22-b05699d89ce1")
-		(at 150.35 96.5)
+		(at 107.315 111.993)
 		(descr "SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, open")
 		(tags "solder jumper open")
 		(property "Reference" "JP2"
 			(at 0 -1.8 0)
 			(layer "F.SilkS")
-			(uuid "d0ed9e4c-ddf3-4128-a19f-b0d8180c9fad")
+			(uuid "9a42f636-9dd3-4540-a53f-8b28d69f5005")
 			(effects
 				(font
 					(size 1 1)
@@ -866,7 +866,7 @@
 		(property "Value" "High+Low_Bank_Present"
 			(at 0 1.9 0)
 			(layer "F.Fab")
-			(uuid "adebb053-c85a-4e83-afba-eb0333ddb733")
+			(uuid "57ecd4ac-926b-4358-9a90-b716558269e9")
 			(effects
 				(font
 					(size 1 1)
@@ -879,7 +879,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c606b28d-ffa5-404e-a354-2ffedd968ecc")
+			(uuid "23d5654a-1a45-41c8-b960-ba7147b4a42f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -892,7 +892,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "423f3512-d7b6-4c6d-8f96-6594bdd4e068")
+			(uuid "4a4c5fe9-41b3-42a1-bfdd-17311957a5ed")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1119,7 +1119,7 @@
 	(footprint "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 		(layer "F.Cu")
 		(uuid "9023053d-ebc7-4fe1-828c-8f28ff6f896f")
-		(at 150.85 73.5)
+		(at 120.381 108.585)
 		(descr "SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, open")
 		(tags "solder jumper open")
 		(property "Reference" "JP7"
@@ -1389,7 +1389,7 @@
 	(footprint "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 		(layer "F.Cu")
 		(uuid "924bc9ae-8b2b-46d2-b53f-0d50726e439a")
-		(at 150.35 79)
+		(at 120.380999 111.886999)
 		(descr "SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, open")
 		(tags "solder jumper open")
 		(property "Reference" "JP6"
@@ -1404,7 +1404,7 @@
 			)
 		)
 		(property "Value" "High+Low_Bank_Present"
-			(at 0 1.9 0)
+			(at 0.015 2.032 0)
 			(layer "F.Fab")
 			(uuid "3bd1c1a2-3edf-49e9-9a76-5a96a92e62e7")
 			(effects
@@ -2188,7 +2188,7 @@
 	(footprint "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 		(layer "F.Cu")
 		(uuid "a568abbd-1b98-4bd1-b84b-d34ed61a2a35")
-		(at 150.35 85)
+		(at 107.3 105.41)
 		(descr "SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, open")
 		(tags "solder jumper open")
 		(property "Reference" "JP5"
@@ -2458,7 +2458,7 @@
 	(footprint "Package_DIP:DIP-28_W15.24mm"
 		(layer "F.Cu")
 		(uuid "c1e74a48-8b43-4fcc-a23a-0ea0918e3001")
-		(at 113.560473 62.483386)
+		(at 113.306473 62.483386)
 		(descr "28-lead though-hole mounted DIP package, row spacing 15.24mm (600 mils)")
 		(tags "THT DIP DIL PDIP 2.54mm 15.24mm 600mil")
 		(property "Reference" "U0"
@@ -2657,7 +2657,7 @@
 			)
 		)
 		(point
-			(at 121.180473 78.993386)
+			(at 120.926473 78.993386)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "673f9ceb-e0b5-4f36-a662-ea2aa799d251")
@@ -2991,7 +2991,7 @@
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=7.5*5.0mm^2, Capacitor, http://www.vishay.com/docs/28535/vy2series.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 7.5mm width 5.0mm Capacitor")
 		(property "Reference" "C1"
-			(at 2.5 -3.75 90)
+			(at 1.738 -0.067 180)
 			(layer "F.SilkS")
 			(uuid "b369047e-4740-49d1-a1e1-6cdbd15a5028")
 			(effects
@@ -3004,6 +3004,7 @@
 		(property "Value" "C"
 			(at 2.5 3.75 90)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "dc81a86e-a79e-41d4-a220-76645f8cf510")
 			(effects
 				(font
@@ -3165,6 +3166,7 @@
 		(property "Reference" "J2"
 			(at 5 -3.5 0)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "ece27112-f374-4f73-9564-eacb0939d8b7")
 			(effects
 				(font
@@ -3174,7 +3176,7 @@
 			)
 		)
 		(property "Value" "Atari 8-bit Left Cartridge Connector"
-			(at 19.05 -7 0)
+			(at 21.086051 -5.864558 0)
 			(layer "F.Fab")
 			(uuid "7a3c60a6-e966-484b-ba64-f915dded4d42")
 			(effects
@@ -3308,7 +3310,7 @@
 			(uuid "8961f85b-71d6-4646-80b1-c6b56be9cd3a")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 16 -3.5 0)
+			(at 3.905165 -5.806902 0)
 			(layer "F.Fab")
 			(uuid "e5f49f50-25b5-442e-b8d3-bc1d2fe3bc9d")
 			(effects
@@ -3953,13 +3955,13 @@
 	(footprint "Package_TO_SOT_SMD:SOT-353_SC-70-5"
 		(layer "F.Cu")
 		(uuid "ea8870d7-e23f-49b8-b74e-da2f06e99bc8")
-		(at 150.6625 67.65)
+		(at 120.3445 105.776)
 		(descr "SOT, 5 Pin (https://home.jeita.or.jp/tsc/std-pdf/ED-7500A.pdf#page=171, JEDEC MO-203, variant AA, https://www.jedec.org/document_search?search_api_views_fulltext=MO-203)")
 		(tags "SOT TO_SOT_SMD SC-88A SOT-353 SC-70-5")
 		(property "Reference" "U2"
 			(at 0 -1.8 0)
 			(layer "F.SilkS")
-			(uuid "30ec783e-24fe-4993-a790-5db2a25fe89c")
+			(uuid "994579b3-dba7-4d69-a7ea-54625f47fb92")
 			(effects
 				(font
 					(size 1 1)
@@ -3970,7 +3972,7 @@
 		(property "Value" "74AHCT1G08"
 			(at 0 1.8 0)
 			(layer "F.Fab")
-			(uuid "6af226e3-dfca-43fb-b683-1c4151689ac8")
+			(uuid "048e4247-330e-4de3-af3c-4c72b3c21e8b")
 			(effects
 				(font
 					(size 1 1)
@@ -3982,7 +3984,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f72881d1-312c-477c-b4ca-a8b48e753fa0")
+			(uuid "8af49103-2fde-498b-97e9-a9e0e4210257")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3993,7 +3995,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "819f4345-5b9d-4c29-be23-ec6431d7367e")
+			(uuid "27d014ff-a24a-4613-b348-740143383587")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4346,7 +4348,7 @@
 	(footprint "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 		(layer "F.Cu")
 		(uuid "f6facc1b-dddf-47bd-a70f-7bdad2f5f821")
-		(at 150.35 103)
+		(at 94.481 105.54)
 		(descr "SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, open")
 		(tags "solder jumper open")
 		(property "Reference" "JP1"
@@ -4613,6 +4615,72 @@
 		)
 		(embedded_fonts no)
 	)
+	(gr_rect
+		(start 90.17 101.6)
+		(end 99.06 113.03)
+		(radius 1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "2441c80f-7c44-4acc-aed5-fd646a42045a")
+	)
+	(gr_line
+		(start 90.17 104.14)
+		(end 99.06 104.14)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4b5e0274-5a86-4c62-b92b-9d7672a8934c")
+	)
+	(gr_rect
+		(start 102.927628 101.605382)
+		(end 111.817628 113.035382)
+		(radius 1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "29117874-447f-4eb2-8cfc-990eb3447a71")
+	)
+	(gr_line
+		(start 102.927628 104.145382)
+		(end 111.817628 104.145382)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "aa61914f-d7fa-45ff-8705-cdc5be9106ba")
+	)
+	(gr_rect
+		(start 115.639266 101.608707)
+		(end 124.529266 113.038707)
+		(radius 1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "7541038e-e322-4def-a325-530210d5d015")
+	)
+	(gr_line
+		(start 115.639266 104.148707)
+		(end 124.529266 104.148707)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ff507b8b-d5de-4179-b698-3e60707a8f0e")
+	)
 	(gr_arc
 		(start 80.01 57.785)
 		(mid 80.195987 57.335987)
@@ -4625,7 +4693,7 @@
 		(uuid "b8fb924f-ae29-44d7-9a08-e404675f1813")
 	)
 	(gr_line
-		(start 80.02 95.25)
+		(start 80.01 95.25)
 		(end 80.01 57.785)
 		(stroke
 			(width 0.05)
@@ -4751,7 +4819,7 @@
 	)
 	(gr_line
 		(start 114.935 57.15)
-		(end 135.255 57.15)
+		(end 133.985 57.15)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -4771,7 +4839,7 @@
 	)
 	(gr_line
 		(start 127 102.87)
-		(end 135.89 93.98)
+		(end 134.62 95.25)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -4780,9 +4848,9 @@
 		(uuid "4e848756-120b-4568-822b-5efcb7bc0686")
 	)
 	(gr_arc
-		(start 135.255 57.15)
-		(mid 135.704013 57.335987)
-		(end 135.89 57.785)
+		(start 133.985 57.15)
+		(mid 134.434013 57.335987)
+		(end 134.62 57.785)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -4791,14 +4859,50 @@
 		(uuid "04c9c8e4-bde9-4cc7-8bed-6ec35c387402")
 	)
 	(gr_line
-		(start 135.89 57.785)
-		(end 135.89 93.98)
+		(start 134.62 57.785)
+		(end 134.62 95.25)
 		(stroke
 			(width 0.05)
 			(type default)
 		)
 		(layer "Edge.Cuts")
 		(uuid "42851e30-52c6-41b5-89f6-a8a09c4ee0d4")
+	)
+	(gr_text "8KB"
+		(at 93.091 103.505 0)
+		(layer "F.SilkS")
+		(uuid "974864f4-f480-4c10-800b-b31bfbc61d8e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "8KB+8KB"
+		(at 103.816628 103.510382 0)
+		(layer "F.SilkS")
+		(uuid "8251e27d-1512-4596-a64f-c4bc15ea0252")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "16KB"
+		(at 118.560266 103.513707 0)
+		(layer "F.SilkS")
+		(uuid "0884d9bd-e7f1-4dce-869e-159371725f54")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
 	)
 	(embedded_fonts no)
 )
