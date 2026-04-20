@@ -3795,7 +3795,7 @@
 		(layer "F.Cu")
 		(uuid "d1c4a9b7-87cc-48dc-901d-5650af543bf3")
 		(at 87.654 121.5)
-		(property "Reference" "J2"
+		(property "Reference" "J1"
 			(at 5 -3.5 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -3848,15 +3848,29 @@
 		(path "/68b7dfff-8330-4a6a-8814-4f441f0e76b4")
 		(sheetname "/")
 		(sheetfile "Atari 8-bit Cartridge.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12" "13" "14" "15"
-					"A" "B" "C" "D" "E" "F" "H" "J" "K" "L" "M" "N" "P" "R" "S"
-				)
-			)
-		)
 		(duplicate_pad_numbers_are_jumpers no)
+		(fp_rect
+			(start 0 -4.445)
+			(end 39.37 2.54)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill yes)
+			(layer "F.Mask")
+			(uuid "3d449145-aece-424e-828e-a71c32842c91")
+		)
+		(fp_rect
+			(start 0 -4.445)
+			(end 39.37 2.54)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.Mask")
+			(uuid "7adebc6c-2a64-4ce3-8296-a1dcccfa2935")
+		)
 		(fp_line
 			(start 0 -8.89)
 			(end 0 1.905)
@@ -3941,7 +3955,7 @@
 		)
 		(fp_line
 			(start 39.37 2.54)
-			(end 39.37 -5.08)
+			(end 39.37 -8.89)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -4260,7 +4274,7 @@
 			(size 1.8 6)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.1388888889)
-			(net "unconnected-(J2-{slash}CCTL-Pad15)")
+			(net "unconnected-(J1-{slash}CCTL-Pad15)")
 			(pinfunction "/CCTL_15")
 			(pintype "output+no_connect")
 			(teardrops
@@ -4554,7 +4568,7 @@
 			(size 1.8 6)
 			(layers "B.Cu" "B.Mask")
 			(roundrect_rratio 0.1388888889)
-			(net "unconnected-(J2-R{slash}W-PadR)")
+			(net "unconnected-(J1-R{slash}W-PadR)")
 			(pinfunction "R/W_R")
 			(pintype "output+no_connect")
 			(teardrops
@@ -4575,7 +4589,7 @@
 			(size 1.8 6)
 			(layers "B.Cu" "B.Mask")
 			(roundrect_rratio 0.1388888889)
-			(net "unconnected-(J2-B-PHI2-PadS)")
+			(net "unconnected-(J1-B-PHI2-PadS)")
 			(pinfunction "B-PHI2_S")
 			(pintype "output+no_connect")
 			(teardrops
