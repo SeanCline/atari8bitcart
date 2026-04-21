@@ -7,7 +7,7 @@
 		(at 5 -3.5 0)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "2e7533b4-73f7-4013-8986-c04e7fc2e698")
+		(uuid "f91c890a-c444-42ee-b446-9e365e8fa1de")
 		(effects
 			(font
 				(size 1 1)
@@ -18,7 +18,7 @@
 	(property "Value" "Atari 8-bit Cartridge Connector"
 		(at 19.586051 3.660442 0)
 		(layer "F.Fab")
-		(uuid "47dc1ab5-1090-43f9-80e3-54fd634cd783")
+		(uuid "b4d91862-3ad1-4286-9b9d-e9e57663995e")
 		(effects
 			(font
 				(size 1 1)
@@ -31,7 +31,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "7e22d892-987d-440d-90a1-6feb45daceb9")
+		(uuid "d0b10d3c-6e04-4e64-af2c-9ebbd8273fcf")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -44,7 +44,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "ca439a0c-41a4-4fdb-a390-409ab5b2a225")
+		(uuid "0d5d0835-b0af-47fc-98f0-9089d4a5fa45")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -55,9 +55,10 @@
 	(property ki_fp_filters "Connector*:*_2x??_*")
 	(sheetname "/")
 	(sheetfile "Atari 8-bit Cartridge.kicad_sch")
+	(attr allow_soldermask_bridges)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_rect
-		(start 0 -4.445)
+		(start 0 -4.5)
 		(end 39.37 2.54)
 		(stroke
 			(width 0.1)
@@ -65,10 +66,10 @@
 		)
 		(fill yes)
 		(layer "F.Mask")
-		(uuid "3ee3addb-e62e-493d-bec2-393ea5e27a0a")
+		(uuid "e21c605e-62b0-43ed-b600-5204b342f2b6")
 	)
 	(fp_rect
-		(start 0 -4.445)
+		(start 0 -4.5)
 		(end 39.37 2.54)
 		(stroke
 			(width 0.1)
@@ -76,7 +77,7 @@
 		)
 		(fill yes)
 		(layer "B.Mask")
-		(uuid "cc88f01f-d6fe-4a5b-95db-fe837fc9331c")
+		(uuid "b2d278f6-4369-4de4-9ee9-009e63a7ae33")
 	)
 	(fp_line
 		(start 0 -8.89)
@@ -86,7 +87,7 @@
 			(type solid)
 		)
 		(layer "Edge.Cuts")
-		(uuid "fedcde26-83fa-4988-a77a-767bbbc25cd8")
+		(uuid "04bf13fa-7763-4980-86f2-dc7edf7b3dc5")
 	)
 	(fp_line
 		(start 0.635 2.54)
@@ -96,7 +97,7 @@
 			(type solid)
 		)
 		(layer "Edge.Cuts")
-		(uuid "67a05895-188e-4425-934c-20ec37f2f9b1")
+		(uuid "2ea2974b-1c4f-435d-b294-38fb4500947c")
 	)
 	(fp_line
 		(start 39.37 -8.89)
@@ -106,7 +107,7 @@
 			(type solid)
 		)
 		(layer "Edge.Cuts")
-		(uuid "281dd994-1520-438d-b99f-6d02a32df9a8")
+		(uuid "fb9d9437-d499-41f9-a413-42d40e3ab191")
 	)
 	(fp_arc
 		(start 0.635 2.54)
@@ -117,7 +118,7 @@
 			(type solid)
 		)
 		(layer "Edge.Cuts")
-		(uuid "406c32e1-43b1-415b-ae87-b093564f9e8b")
+		(uuid "9a5faf1f-3ee0-43dc-9a46-e6cda9385325")
 	)
 	(fp_arc
 		(start 39.37 1.905)
@@ -128,7 +129,7 @@
 			(type solid)
 		)
 		(layer "Edge.Cuts")
-		(uuid "b6ff190f-7a24-48e6-b7ce-2d565ab7dbc5")
+		(uuid "1d1b3540-896a-4a1d-9f07-d48e5c1462ff")
 	)
 	(fp_line
 		(start 0 -8.89)
@@ -138,7 +139,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "3b04e098-36aa-463f-b4b5-f77dcbfa3168")
+		(uuid "c04b7d87-4682-46b8-bfec-912903fd948e")
 	)
 	(fp_line
 		(start 0 -8.89)
@@ -148,7 +149,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "1f0141c6-01b3-4789-9d1f-94f278bb3868")
+		(uuid "546c954b-6c9c-4359-acae-b8cffe2e7662")
 	)
 	(fp_line
 		(start 39.37 2.54)
@@ -158,7 +159,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "22fba800-e4a3-404b-beb2-7aedaaa87cea")
+		(uuid "561241f1-ae5c-4e37-ae16-542759a38b78")
 	)
 	(fp_line
 		(start 39.37 2.54)
@@ -168,12 +169,12 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "436f7fb3-72b6-4dcc-8bd1-b5f2ae453076")
+		(uuid "a9669ccc-23be-426d-ace8-86fc02c679fd")
 	)
 	(fp_text user "${REFERENCE}"
 		(at -0.094835 3.591098 0)
 		(layer "F.Fab")
-		(uuid "ce08d72e-56d5-4142-8cac-3e24afb0df1a")
+		(uuid "84b732ed-cdb5-40db-be4d-f43ce9e96fb7")
 		(effects
 			(font
 				(size 1 1)
@@ -198,7 +199,7 @@
 			(allow_two_segments yes)
 			(prefer_zone_connections yes)
 		)
-		(uuid "c0fac2ed-8400-4419-a486-d419edc3fd0d")
+		(uuid "c3462e32-97e6-4a46-9552-fa993435310f")
 	)
 	(pad "2" connect roundrect
 		(at 4.445 -1)
@@ -216,7 +217,7 @@
 			(allow_two_segments yes)
 			(prefer_zone_connections yes)
 		)
-		(uuid "cf943783-39a5-427b-90fa-9a0af03cda14")
+		(uuid "4aa5a01f-b40f-44ae-801d-4cf5a5347ff3")
 	)
 	(pad "3" connect roundrect
 		(at 6.985 -1)
@@ -234,7 +235,7 @@
 			(allow_two_segments yes)
 			(prefer_zone_connections yes)
 		)
-		(uuid "865a7c2d-52d2-48df-a198-dad3736ebb66")
+		(uuid "91f43c6d-8eec-43b7-9abd-73e6be36f671")
 	)
 	(pad "4" connect roundrect
 		(at 9.525 -1)
@@ -252,7 +253,7 @@
 			(allow_two_segments yes)
 			(prefer_zone_connections yes)
 		)
-		(uuid "7ded7767-740c-48e8-8e58-2f756ce82399")
+		(uuid "3df0d98a-9897-432a-a5ea-960b8dfdd8fa")
 	)
 	(pad "5" connect roundrect
 		(at 12.065 -1)
@@ -270,7 +271,7 @@
 			(allow_two_segments yes)
 			(prefer_zone_connections yes)
 		)
-		(uuid "08c309e0-f415-429b-a89d-dee290c2ad98")
+		(uuid "e4f6ba9f-08bc-4a7e-9778-b57da1467f3a")
 	)
 	(pad "6" connect roundrect
 		(at 14.605 -1)
@@ -288,7 +289,7 @@
 			(allow_two_segments yes)
 			(prefer_zone_connections yes)
 		)
-		(uuid "190aa6fd-4205-457b-b5f3-e85c53533b93")
+		(uuid "4460a8ad-1c75-458d-8f84-d5a5a9832964")
 	)
 	(pad "7" connect roundrect
 		(at 17.145 -1)
@@ -306,7 +307,7 @@
 			(allow_two_segments yes)
 			(prefer_zone_connections yes)
 		)
-		(uuid "0b80e013-e6f9-4b19-91a3-4e5cf9012631")
+		(uuid "452a7e6a-6ca9-4dae-87e9-a2a6dc1d4f01")
 	)
 	(pad "8" connect roundrect
 		(at 19.685 -1)
@@ -324,7 +325,7 @@
 			(allow_two_segments yes)
 			(prefer_zone_connections yes)
 		)
-		(uuid "2585137f-9ecb-4672-9f21-e43b8b63284d")
+		(uuid "24950dad-44d1-4616-98c6-8c44fba63cb8")
 	)
 	(pad "9" connect roundrect
 		(at 22.225 -1)
@@ -342,7 +343,7 @@
 			(allow_two_segments yes)
 			(prefer_zone_connections yes)
 		)
-		(uuid "762c9213-9df7-47a2-a745-877afc1f4ee5")
+		(uuid "14a19df5-51b5-4de1-a68d-afefff97f5c7")
 	)
 	(pad "10" connect roundrect
 		(at 24.765 -1)
@@ -360,7 +361,7 @@
 			(allow_two_segments yes)
 			(prefer_zone_connections yes)
 		)
-		(uuid "084b936f-4c78-4655-99ff-ecc223eafe5b")
+		(uuid "faa83dc3-f986-4ccd-a3f4-792a2185d2e8")
 	)
 	(pad "11" connect roundrect
 		(at 27.305 -1)
@@ -378,7 +379,7 @@
 			(allow_two_segments yes)
 			(prefer_zone_connections yes)
 		)
-		(uuid "9a550c84-e306-47cd-a13d-711e54e79731")
+		(uuid "19957dcb-c228-48cd-b043-612eae1fc997")
 	)
 	(pad "12" connect roundrect
 		(at 29.845 -1)
@@ -396,7 +397,7 @@
 			(allow_two_segments yes)
 			(prefer_zone_connections yes)
 		)
-		(uuid "ec8dee7f-456d-4099-90a9-afa43f2c96b1")
+		(uuid "1c7ff3d5-a118-44ed-bb0c-ecb0888841a3")
 	)
 	(pad "13" connect roundrect
 		(at 32.385 -1)
@@ -414,7 +415,7 @@
 			(allow_two_segments yes)
 			(prefer_zone_connections yes)
 		)
-		(uuid "1b229478-810b-47be-8a2c-6c35289c828f")
+		(uuid "d93c0798-46d4-4654-9ebb-5da7c232660e")
 	)
 	(pad "14" connect roundrect
 		(at 34.925 -1)
@@ -432,7 +433,7 @@
 			(allow_two_segments yes)
 			(prefer_zone_connections yes)
 		)
-		(uuid "a8a6da2c-270c-4e4f-a2e1-caff4361ea9f")
+		(uuid "e45682d1-6d61-43a0-9dc5-f34eb2a2ce51")
 	)
 	(pad "15" connect roundrect
 		(at 37.465 -1)
@@ -450,7 +451,7 @@
 			(allow_two_segments yes)
 			(prefer_zone_connections yes)
 		)
-		(uuid "65c63bbc-1b8a-4fc2-aa0f-3d3881d2161e")
+		(uuid "cde2c3a2-4237-45eb-9c75-4f9c9cb77eb1")
 	)
 	(pad "A" connect roundrect
 		(at 1.905 -1)
@@ -468,7 +469,7 @@
 			(allow_two_segments yes)
 			(prefer_zone_connections yes)
 		)
-		(uuid "83280036-9acb-41de-a727-af0a227b00a9")
+		(uuid "c4e5653f-3031-4972-9475-164673a267b8")
 	)
 	(pad "B" connect roundrect
 		(at 4.445 -1)
@@ -486,7 +487,7 @@
 			(allow_two_segments yes)
 			(prefer_zone_connections yes)
 		)
-		(uuid "dab87815-e687-46a7-821f-6fd1f1721d89")
+		(uuid "e50bd695-607f-4f8d-b6eb-7377326a2adf")
 	)
 	(pad "C" connect roundrect
 		(at 6.985 -1)
@@ -504,7 +505,7 @@
 			(allow_two_segments yes)
 			(prefer_zone_connections yes)
 		)
-		(uuid "9ceed755-711d-48d8-a084-236c7b675446")
+		(uuid "a1044e3c-6108-4c7b-a84e-31b88c2f8b02")
 	)
 	(pad "D" connect roundrect
 		(at 9.525 -1)
@@ -522,7 +523,7 @@
 			(allow_two_segments yes)
 			(prefer_zone_connections yes)
 		)
-		(uuid "d0d015bb-8ba5-4e21-b6ae-8c0b6fe90fad")
+		(uuid "140037e8-a04b-408e-90e1-7086571383d0")
 	)
 	(pad "E" connect roundrect
 		(at 12.065 -1)
@@ -540,7 +541,7 @@
 			(allow_two_segments yes)
 			(prefer_zone_connections yes)
 		)
-		(uuid "fb614d3a-218d-482c-a2c5-5f575c24fde7")
+		(uuid "b7cd4a03-056c-4ac8-8993-03ccf818bca3")
 	)
 	(pad "F" connect roundrect
 		(at 14.605 -1)
@@ -558,7 +559,7 @@
 			(allow_two_segments yes)
 			(prefer_zone_connections yes)
 		)
-		(uuid "bc682dfc-f5f4-418a-a31e-33d0ebda76cb")
+		(uuid "6665359a-3a12-48ff-89a4-90fc3ac73517")
 	)
 	(pad "H" connect roundrect
 		(at 17.145 -1)
@@ -576,7 +577,7 @@
 			(allow_two_segments yes)
 			(prefer_zone_connections yes)
 		)
-		(uuid "bd09ee1c-51de-4622-baea-bc9865861431")
+		(uuid "48909536-f4b3-4cd9-a6b3-60c0bf804e4a")
 	)
 	(pad "J" connect roundrect
 		(at 19.685 -1)
@@ -594,7 +595,7 @@
 			(allow_two_segments yes)
 			(prefer_zone_connections yes)
 		)
-		(uuid "a85b9c93-2f9b-4f27-9af2-73d24c8fb1ce")
+		(uuid "5d3aa0fe-3b64-48be-8e7a-ea7ed491a91b")
 	)
 	(pad "K" connect roundrect
 		(at 22.225 -1)
@@ -612,7 +613,7 @@
 			(allow_two_segments yes)
 			(prefer_zone_connections yes)
 		)
-		(uuid "5f2d25e8-a4bc-4d78-8105-2d80674a14ab")
+		(uuid "17d2b9ee-8081-4e08-968e-a0014fef5ce7")
 	)
 	(pad "L" connect roundrect
 		(at 24.765 -1)
@@ -630,7 +631,7 @@
 			(allow_two_segments yes)
 			(prefer_zone_connections yes)
 		)
-		(uuid "e4b9b1b0-4371-4ff2-8832-a3ac31a788c8")
+		(uuid "eb2daa2a-bb1b-4bd7-b307-1f12c3cdca2f")
 	)
 	(pad "M" connect roundrect
 		(at 27.305 -1)
@@ -648,7 +649,7 @@
 			(allow_two_segments yes)
 			(prefer_zone_connections yes)
 		)
-		(uuid "a64313e0-12be-4f47-9243-71d746dcef76")
+		(uuid "160da339-b2b7-4429-89d4-2e8433c7b23d")
 	)
 	(pad "N" connect roundrect
 		(at 29.845 -1)
@@ -666,7 +667,7 @@
 			(allow_two_segments yes)
 			(prefer_zone_connections yes)
 		)
-		(uuid "9f907dab-f061-4ead-8153-35c8de75bdf9")
+		(uuid "5c6454fa-1a0d-4ecc-a933-c9f902ee90fd")
 	)
 	(pad "P" connect roundrect
 		(at 32.385 -1)
@@ -684,7 +685,7 @@
 			(allow_two_segments yes)
 			(prefer_zone_connections yes)
 		)
-		(uuid "0cac328a-02c2-4bc0-bfb6-7b6e9d7b53af")
+		(uuid "928b9c81-63d3-4aaa-9904-a31297de74ac")
 	)
 	(pad "R" connect roundrect
 		(at 34.925 -1)
@@ -702,7 +703,7 @@
 			(allow_two_segments yes)
 			(prefer_zone_connections yes)
 		)
-		(uuid "c37b166f-67e1-4525-9499-70c9a4e76c2a")
+		(uuid "49a4af73-4846-4c8c-aa08-628581bdbed2")
 	)
 	(pad "S" connect roundrect
 		(at 37.465 -1)
@@ -720,7 +721,7 @@
 			(allow_two_segments yes)
 			(prefer_zone_connections yes)
 		)
-		(uuid "80f37608-aece-4e04-9b07-904d8d294512")
+		(uuid "cfd7bbda-a84b-4234-b40e-d9c9c78face9")
 	)
 	(embedded_fonts no)
 )
