@@ -3804,7 +3804,7 @@
 		(uuid "639c9094-3f0c-41e2-ad5b-5c4a8371aff2")
 	)
 	(label "U0_Enable_16KB"
-		(at 78.74 147.32 0)
+		(at 78.74 149.86 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4244,7 +4244,7 @@
 		(uuid "d8e99127-bd30-4ae6-bca3-2aec2b2e7305")
 	)
 	(label "{slash}S4"
-		(at 48.26 144.78 180)
+		(at 48.26 152.4 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4344,7 +4344,7 @@
 		(uuid "fa68e27b-9ae5-4b53-affd-18b47b49a0fb")
 	)
 	(label "{slash}S5"
-		(at 48.26 149.86 180)
+		(at 48.26 147.32 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6048,10 +6048,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8d009227-f96a-40dc-a814-f5d6d04f01e6")
 		(property "Reference" "U2"
-			(at 76.2 143.4398 0)
+			(at 74.676 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6061,7 +6060,7 @@
 			)
 		)
 		(property "Value" "74AHCT1G08"
-			(at 76.2 145.9798 0)
+			(at 74.676 143.51 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
