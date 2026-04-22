@@ -1,0 +1,248 @@
+name: Build JLCPCB Gerbers
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-gerbers:
+    runs-on: ubuntu-latest
+
+    env:
+      BOARD_FILE: Cartridge for Atari 8-bit Computers.kicad_pcb
+      SCHEMATIC_FILE: Cartridge for Atari 8-bit Computers.kicad_sch
+      BUILD_DIR: build
+      GERBER_DIR: build/jlcpcb/gerbers
+      DRILL_DIR: build/jlcpcb/drill
+      ASSEMBLY_DIR: build/jlcpcb/assembly
+      PACKAGE_DIR: build/jlcpcb/package
+      KICAD_CI_HOME: /work/.ci-home
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Pull KiCad CLI image
+        run: docker pull kicad/kicad:nightly
+
+      - name: Create output directories
+        shell: bash
+        run: |
+          mkdir -p \
+            "$BUILD_DIR/drc" \
+            "$GERBER_DIR" \
+            "$DRILL_DIR" \
+            "$ASSEMBLY_DIR" \
+            "$PACKAGE_DIR" \
+            .ci-home/.cache \
+            .ci-home/.config \
+            .ci-home/.local/share
+
+      - name: Run PCB DRC
+        shell: bash
+        run: |
+          docker run --rm \
+            -u "$(id -u):$(id -g)" \
+            -e HOME="$KICAD_CI_HOME" \
+            -e XDG_CACHE_HOME="$KICAD_CI_HOME/.cache" \
+            -e XDG_CONFIG_HOME="$KICAD_CI_HOME/.config" \
+            -e XDG_DATA_HOME="$KICAD_CI_HOME/.local/share" \
+            -v "$PWD:/work" \
+            -w /work \
+            kicad/kicad:nightly \
+            kicad-cli pcb drc \
+            --refill-zones \
+            --severity-error \
+            --exit-code-violations \
+            --output "$BUILD_DIR/drc/board-drc.rpt" \
+            "$BOARD_FILE"
+
+      - name: Export JLCPCB gerbers
+        shell: bash
+        run: |
+          docker run --rm \
+            -u "$(id -u):$(id -g)" \
+            -e HOME="$KICAD_CI_HOME" \
+            -e XDG_CACHE_HOME="$KICAD_CI_HOME/.cache" \
+            -e XDG_CONFIG_HOME="$KICAD_CI_HOME/.config" \
+            -e XDG_DATA_HOME="$KICAD_CI_HOME/.local/share" \
+            -v "$PWD:/work" \
+            -w /work \
+            kicad/kicad:nightly \
+            kicad-cli pcb export gerbers \
+            --layers F.Cu,B.Cu,F.Mask,B.Mask,F.SilkS,B.SilkS,Edge.Cuts \
+            --output "$GERBER_DIR" \
+            --precision 6 \
+            --no-x2 \
+            --no-netlist \
+            --check-zones \
+            "$BOARD_FILE"
+
+      - name: Export drill files
+        shell: bash
+        run: |
+          docker run --rm \
+            -u "$(id -u):$(id -g)" \
+            -e HOME="$KICAD_CI_HOME" \
+            -e XDG_CACHE_HOME="$KICAD_CI_HOME/.cache" \
+            -e XDG_CONFIG_HOME="$KICAD_CI_HOME/.config" \
+            -e XDG_DATA_HOME="$KICAD_CI_HOME/.local/share" \
+            -v "$PWD:/work" \
+            -w /work \
+            kicad/kicad:nightly \
+            kicad-cli pcb export drill \
+            --output "$DRILL_DIR" \
+            --format excellon \
+            --excellon-units mm \
+            --excellon-zeros-format decimal \
+            --excellon-separate-th \
+            "$BOARD_FILE"
+
+      - name: Export assembly centroid
+        shell: bash
+        run: |
+          docker run --rm \
+            -u "$(id -u):$(id -g)" \
+            -e HOME="$KICAD_CI_HOME" \
+            -e XDG_CACHE_HOME="$KICAD_CI_HOME/.cache" \
+            -e XDG_CONFIG_HOME="$KICAD_CI_HOME/.config" \
+            -e XDG_DATA_HOME="$KICAD_CI_HOME/.local/share" \
+            -v "$PWD:/work" \
+            -w /work \
+            kicad/kicad:nightly \
+            kicad-cli pcb export pos \
+            --output "$ASSEMBLY_DIR/positions.csv" \
+            --format csv \
+            --units mm \
+            --side both \
+            --smd-only \
+            --exclude-fp-th \
+            --exclude-dnp \
+            "$BOARD_FILE"
+
+      - name: Normalize JLCPCB assembly files
+        shell: bash
+        run: |
+          python - <<'PY'
+          import csv
+          import os
+          import re
+          from collections import defaultdict
+          from pathlib import Path
+
+          assembly_dir = Path("build/jlcpcb/assembly")
+          board_file = Path(os.environ["BOARD_FILE"])
+
+          bom_out = assembly_dir / "jlcpcb-bom.csv"
+          footprint_re = re.compile(r'^\s*\(footprint "([^"]+)"')
+          property_re = re.compile(r'^\s*\(property "([^"]+)" "([^"]*)"')
+
+          def natural_key(value: str):
+              return [int(part) if part.isdigit() else part for part in re.split(r'(\d+)', value)]
+
+          def iter_footprint_blocks(text: str):
+              block = []
+              depth = 0
+              for line in text.splitlines():
+                  if not block:
+                      if footprint_re.match(line):
+                          block = [line]
+                          depth = line.count("(") - line.count(")")
+                      continue
+
+                  block.append(line)
+                  depth += line.count("(") - line.count(")")
+                  if depth <= 0:
+                      yield block
+                      block = []
+                      depth = 0
+
+          grouped_rows = defaultdict(list)
+          for block in iter_footprint_blocks(board_file.read_text(encoding="utf-8")):
+              footprint = ""
+              properties = {}
+              exclude_from_bom = False
+
+              for line in block:
+                  if not footprint:
+                      match = footprint_re.match(line)
+                      if match:
+                          footprint = match.group(1).strip()
+
+                  match = property_re.match(line)
+                  if match:
+                      properties[match.group(1)] = match.group(2)
+
+                  if "(attr " in line and "exclude_from_bom" in line:
+                      exclude_from_bom = True
+
+              if exclude_from_bom:
+                  continue
+
+              lcsc = (properties.get("LCSC") or "").strip()
+              if not lcsc:
+                  continue
+
+              reference = (properties.get("Reference") or "").strip()
+              value = (properties.get("Value") or "").strip()
+              grouped_rows[(value, footprint, lcsc)].append(reference)
+
+          with bom_out.open("w", newline="", encoding="utf-8") as dst:
+              fieldnames = ["Comment", "Designator", "Footprint", "LCSC Part #"]
+              writer = csv.DictWriter(dst, fieldnames=fieldnames)
+              writer.writeheader()
+              for (value, footprint, lcsc), refs in sorted(
+                  grouped_rows.items(),
+                  key=lambda item: natural_key(sorted(item[1], key=natural_key)[0]),
+              ):
+                  writer.writerow({
+                      "Comment": value,
+                      "Designator": ",".join(sorted(refs, key=natural_key)),
+                      "Footprint": footprint,
+                      "LCSC Part #": lcsc,
+                  })
+
+          cpl_in = assembly_dir / "positions.csv"
+          cpl_out = assembly_dir / "jlcpcb-cpl.csv"
+          with cpl_in.open(newline="", encoding="utf-8") as src, cpl_out.open("w", newline="", encoding="utf-8") as dst:
+              reader = csv.DictReader(src)
+              fieldnames = ["Designator", "Mid X", "Mid Y", "Layer", "Rotation"]
+              writer = csv.DictWriter(dst, fieldnames=fieldnames)
+              writer.writeheader()
+
+              def pick(row, *names):
+                  for name in names:
+                      value = row.get(name)
+                      if value is not None:
+                          return value.strip()
+                  return ""
+
+              for row in reader:
+                  writer.writerow({
+                      "Designator": pick(row, "Ref", "Reference", "Designator"),
+                      "Mid X": pick(row, "PosX", "Mid X", "Center X"),
+                      "Mid Y": pick(row, "PosY", "Mid Y", "Center Y"),
+                      "Layer": pick(row, "Side", "Layer"),
+                      "Rotation": pick(row, "Rot", "Rotation"),
+                  })
+          PY
+
+      - name: Stage JLCPCB artifact files
+        shell: bash
+        run: |
+          cp "$GERBER_DIR"/* "$PACKAGE_DIR"/
+          cp "$DRILL_DIR"/* "$PACKAGE_DIR"/
+          cp "$ASSEMBLY_DIR"/jlcpcb-*.csv "$PACKAGE_DIR"/
+          cp "$BUILD_DIR/drc/board-drc.rpt" "$PACKAGE_DIR"/
+
+      - name: Upload JLCPCB artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: jlcpcb-gerbers-${{ github.sha }}
+          path: build/jlcpcb/package/*
+          if-no-files-found: error
+          retention-days: 30
