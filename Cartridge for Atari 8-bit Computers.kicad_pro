@@ -237,7 +237,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "1.0"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -485,7 +485,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Atari 8-bit Cartridge.kicad_pro",
+    "filename": "Cartridge for Atari 8-bit Computers.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -662,7 +662,7 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "Atari 8-bit Cartridge.kicad_sch",
+        "filename": "Cartridge for Atari 8-bit Computers.kicad_sch",
         "name": "Root",
         "uuid": "a4d58edd-db27-4f31-a98e-532286b289d0"
       }
@@ -676,7 +676,12 @@
       "Root"
     ]
   ],
-  "text_variables": {},
+  "text_variables": {
+    "COMPANY": "Sean D. Cline",
+    "PROJECTNAME_FULL": "Cartridge for Atari 8-bit (400/800/XL/XE)",
+    "PROJECTURL": "https://sdcline.com/atari8bitcart",
+    "VERSION": "V1.0"
+  },
   "tuning_profiles": {
     "meta": {
       "version": 0

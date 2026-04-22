@@ -4,6 +4,12 @@
 	(generator_version "10.0")
 	(uuid "a4d58edd-db27-4f31-a98e-532286b289d0")
 	(paper "A4")
+	(title_block
+		(title "Atari 8-Bit (400/800/XL/XE) Cartridge")
+		(date "2026-04-21")
+		(rev "1.0")
+		(company "Sean D. Cline")
+	)
 	(lib_symbols
 		(symbol "74xGxx:74AHCT1G08"
 			(exclude_from_sim no)
@@ -4455,7 +4461,7 @@
 			(uuid "3ab53c25-17d7-4709-bc0b-3aab6a54e682")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "JP2")
 					(unit 1)
@@ -4533,7 +4539,7 @@
 			(uuid "647cd763-2e8f-4816-ada5-b001c9dd0cee")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "#PWR013")
 					(unit 1)
@@ -4611,7 +4617,7 @@
 			(uuid "3fc771b3-8fed-4ec2-8cb9-578b34e16eb4")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "#PWR014")
 					(unit 1)
@@ -4689,7 +4695,7 @@
 			(uuid "1037b839-9136-4cc4-8ef0-794cb3f99ee1")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "#PWR07")
 					(unit 1)
@@ -4769,7 +4775,7 @@
 			(uuid "2ffc55b2-f48c-42ed-a240-7f540779c2b2")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "JP9")
 					(unit 1)
@@ -4847,7 +4853,7 @@
 			(uuid "93656857-4652-4760-a542-fff9cfe5063f")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "#PWR012")
 					(unit 1)
@@ -4927,7 +4933,7 @@
 			(uuid "8a01c949-295c-4e88-8ab9-1c5da3394520")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "JP8")
 					(unit 1)
@@ -5005,7 +5011,7 @@
 			(uuid "15fc9097-564d-4dd5-aa86-f72986f5ac67")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "#PWR018")
 					(unit 1)
@@ -5083,7 +5089,7 @@
 			(uuid "5cb399a5-0192-42e0-ba74-9a92e52d9c2a")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "#PWR010")
 					(unit 1)
@@ -5246,7 +5252,7 @@
 			(uuid "b23614b1-948b-49df-85c0-c0d503c59693")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "J1")
 					(unit 1)
@@ -5324,7 +5330,7 @@
 			(uuid "cec36fcc-5fb8-436f-b79c-9f8b2f999f77")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "#PWR016")
 					(unit 1)
@@ -5404,7 +5410,7 @@
 			(uuid "3368551e-e579-4e6b-9a11-bd2ef20edd63")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "JP6")
 					(unit 1)
@@ -5482,7 +5488,7 @@
 			(uuid "e02a3201-2f33-4206-a1b6-b3386aa58aba")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "#PWR09")
 					(unit 1)
@@ -5560,7 +5566,7 @@
 			(uuid "5638d5b7-87d5-4e34-9895-807730878c83")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "#PWR011")
 					(unit 1)
@@ -5638,7 +5644,7 @@
 			(uuid "26d202c4-5423-41de-bcee-d43da6a58695")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "#PWR05")
 					(unit 1)
@@ -5716,7 +5722,7 @@
 			(uuid "119a41a3-eab1-4696-a6ce-367f81b62a24")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "#PWR019")
 					(unit 1)
@@ -5794,7 +5800,7 @@
 			(uuid "de9f9d53-874c-4d61-afec-e2cf2ea40c80")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "#PWR04")
 					(unit 1)
@@ -5872,7 +5878,7 @@
 			(uuid "4430cf4c-5883-4458-806f-ada06fd74ea1")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "#PWR08")
 					(unit 1)
@@ -5952,7 +5958,7 @@
 			(uuid "092eddf4-5dcf-48c0-a4af-7fafed821f77")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "JP4")
 					(unit 1)
@@ -6030,7 +6036,7 @@
 			(uuid "c9169eb4-25ec-40c2-aec0-c7c98b5f0233")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "#PWR03")
 					(unit 1)
@@ -6102,6 +6108,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C376056"
+			(at 63.5 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "7416c95b-4fe9-46cd-b631-2916b76a4f93")
 		)
@@ -6118,7 +6135,7 @@
 			(uuid "e3c5e01f-e8de-4451-9029-ddfbfcfc6953")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "U2")
 					(unit 1)
@@ -6198,7 +6215,7 @@
 			(uuid "58a57f65-12e1-4797-a6f8-353b213aa952")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "JP5")
 					(unit 1)
@@ -6278,7 +6295,7 @@
 			(uuid "93491b94-6b60-4b68-8343-2d3f701dd5f6")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "JP3")
 					(unit 1)
@@ -6358,7 +6375,7 @@
 			(uuid "5a7177eb-3843-4187-9b2b-ddb69c043975")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "C1")
 					(unit 1)
@@ -6436,7 +6453,7 @@
 			(uuid "e0c2882b-be65-48fe-bda3-0a506872f283")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "#PWR06")
 					(unit 1)
@@ -6596,7 +6613,7 @@
 			(uuid "b9272b63-bf20-4f7f-9787-151be7377421")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "U0")
 					(unit 1)
@@ -6674,7 +6691,7 @@
 			(uuid "746b57b3-cae9-4d45-819c-5c07f2dad2c4")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "#PWR01")
 					(unit 1)
@@ -6754,7 +6771,7 @@
 			(uuid "a97e719d-bb0a-425f-85ae-f79837837e64")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "JP1")
 					(unit 1)
@@ -6832,7 +6849,7 @@
 			(uuid "ff51a237-f688-4dda-99ce-792edf06047d")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "#PWR015")
 					(unit 1)
@@ -6912,7 +6929,7 @@
 			(uuid "a7939495-b379-4b45-8c4a-8a9b2214cf50")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "C0")
 					(unit 1)
@@ -7072,7 +7089,7 @@
 			(uuid "7391e4ee-852d-4484-86da-d949c4de449c")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "U1")
 					(unit 1)
@@ -7150,7 +7167,7 @@
 			(uuid "967ab8ad-c21f-46ab-8493-77145ad80a55")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "#PWR02")
 					(unit 1)
@@ -7228,7 +7245,7 @@
 			(uuid "90853072-c51c-4201-a5c7-98f3ce3f2716")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "#PWR017")
 					(unit 1)
@@ -7308,7 +7325,7 @@
 			(uuid "71504465-9e7b-4d2d-9b8b-fe56a295faba")
 		)
 		(instances
-			(project "Atari 8-bit Cartridge"
+			(project "Cartridge for Atari 8-bit Computers"
 				(path "/a4d58edd-db27-4f31-a98e-532286b289d0"
 					(reference "JP7")
 					(unit 1)
