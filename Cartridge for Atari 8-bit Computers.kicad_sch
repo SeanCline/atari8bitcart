@@ -6108,7 +6108,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C376056"
+		(property "LCSC" "C460499"
 			(at 63.5 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -6368,6 +6368,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C2896060"
+			(at 125.73 22.86 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "253e8437-9abb-4bcb-b041-c5a662574a5f")
 		)
@@ -6518,6 +6529,17 @@
 			)
 		)
 		(property "Description" "OTP EPROM 128 KiBit, [Obsolete 2004-01]"
+			(at 190.5 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C72121"
 			(at 190.5 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -6922,6 +6944,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C2896060"
+			(at 190.5 22.86 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "f252d062-0195-47a3-a209-427c5cdf6b8d")
 		)
@@ -6994,6 +7027,17 @@
 			)
 		)
 		(property "Description" "OTP EPROM 64 KiBit, [Obsolete 2004-01]"
+			(at 125.73 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C72121"
 			(at 125.73 62.23 0)
 			(hide yes)
 			(show_name no)
