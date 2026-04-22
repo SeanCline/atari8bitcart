@@ -8,6 +8,9 @@ Configurable Atari 8-bit cartridge PCB for the Atari 400/800/XL/XE line of home 
 2. **Dual 8 KB + 8 KB mode** using two 2764-compatible PROMs.
 3. **Single 16 KB mode** using one 27128-compatible PROM in the right-hand socket along with a `74AHCT1G08` for chip-enable logic.
 
+![Board top view](images/board-top.png)
+![Board bottom view](images/board-bottom.png)
+
 ## Hardware Summary
 
 - **U0**: accepts either:
@@ -25,8 +28,12 @@ The jumpers are organized into sections, one for each supported configuration.
 
 ## Releases
 
-The latest gerber files can be found in the build artifacts of this repository.
+The latest gerber files can be found in the build artifacts section of the [Actions](https://github.com/SeanCline/atari8bitcart/actions) tab.
 At the moment, the gerbers are generated for JLCPCB, but it should be pretty easy to send them to a PCB fab of your choosing.
+
+## Schematic
+
+![Schematic view](images/Cartridge%20for%20Atari%208-bit%20Computers.svg)
 
 ## License
 
