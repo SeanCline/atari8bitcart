@@ -1,6 +1,6 @@
 # Cartridge for 8-Bit Atari Computers (400/800/XL/XE)
 
-[![Build JLCPCB Gerbers](https://github.com/SeanCline/atari8bitcart/actions/workflows/build-gerbers.yml/badge.svg)](https://github.com/SeanCline/atari8bitcart/actions/workflows/build-gerbers.yml)
+[![Build Gerbers](https://github.com/SeanCline/atari8bitcart/actions/workflows/build-gerbers.yml/badge.svg)](https://github.com/SeanCline/atari8bitcart/actions/workflows/build-gerbers.yml)
 
 Configurable Atari 8-bit cartridge PCB for the Atari 400/800/XL/XE line of home computers.
 

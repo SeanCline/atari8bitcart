@@ -19,6 +19,7 @@ jobs:
       GERBER_DIR: build/jlcpcb/gerbers
       DRILL_DIR: build/jlcpcb/drill
       ASSEMBLY_DIR: build/jlcpcb/assembly
+      PREVIEW_DIR: build/previews
       PACKAGE_DIR: build/jlcpcb/package
       KICAD_CI_HOME: /work/.ci-home
 
@@ -37,6 +38,7 @@ jobs:
             "$GERBER_DIR" \
             "$DRILL_DIR" \
             "$ASSEMBLY_DIR" \
+            "$PREVIEW_DIR" \
             "$PACKAGE_DIR" \
             .ci-home/.cache \
             .ci-home/.config \
@@ -123,6 +125,63 @@ jobs:
             --exclude-fp-th \
             --exclude-dnp \
             "$BOARD_FILE"
+
+      - name: Render board top preview
+        shell: bash
+        run: |
+          docker run --rm \
+            -u "$(id -u):$(id -g)" \
+            -e HOME="$KICAD_CI_HOME" \
+            -e XDG_CACHE_HOME="$KICAD_CI_HOME/.cache" \
+            -e XDG_CONFIG_HOME="$KICAD_CI_HOME/.config" \
+            -e XDG_DATA_HOME="$KICAD_CI_HOME/.local/share" \
+            -v "$PWD:/work" \
+            -w /work \
+            kicad/kicad:nightly \
+            kicad-cli pcb render \
+            --output "$PREVIEW_DIR/board-top.png" \
+            --side top \
+            --width 1600 \
+            --height 1200 \
+            --quality high \
+            "$BOARD_FILE"
+
+      - name: Render board bottom preview
+        shell: bash
+        run: |
+          docker run --rm \
+            -u "$(id -u):$(id -g)" \
+            -e HOME="$KICAD_CI_HOME" \
+            -e XDG_CACHE_HOME="$KICAD_CI_HOME/.cache" \
+            -e XDG_CONFIG_HOME="$KICAD_CI_HOME/.config" \
+            -e XDG_DATA_HOME="$KICAD_CI_HOME/.local/share" \
+            -v "$PWD:/work" \
+            -w /work \
+            kicad/kicad:nightly \
+            kicad-cli pcb render \
+            --output "$PREVIEW_DIR/board-bottom.png" \
+            --side bottom \
+            --width 1600 \
+            --height 1200 \
+            --quality high \
+            "$BOARD_FILE"
+
+      - name: Export schematic preview
+        shell: bash
+        run: |
+          docker run --rm \
+            -u "$(id -u):$(id -g)" \
+            -e HOME="$KICAD_CI_HOME" \
+            -e XDG_CACHE_HOME="$KICAD_CI_HOME/.cache" \
+            -e XDG_CONFIG_HOME="$KICAD_CI_HOME/.config" \
+            -e XDG_DATA_HOME="$KICAD_CI_HOME/.local/share" \
+            -v "$PWD:/work" \
+            -w /work \
+            kicad/kicad:nightly \
+            kicad-cli sch export svg \
+            --output "$PREVIEW_DIR" \
+            --exclude-drawing-sheet \
+            "$SCHEMATIC_FILE"
 
       - name: Normalize JLCPCB assembly files
         shell: bash
@@ -237,6 +296,7 @@ jobs:
           cp "$GERBER_DIR"/* "$PACKAGE_DIR"/
           cp "$DRILL_DIR"/* "$PACKAGE_DIR"/
           cp "$ASSEMBLY_DIR"/jlcpcb-*.csv "$PACKAGE_DIR"/
+          cp "$PREVIEW_DIR"/* "$PACKAGE_DIR"/
           cp "$BUILD_DIR/drc/board-drc.rpt" "$PACKAGE_DIR"/
 
       - name: Upload JLCPCB artifact

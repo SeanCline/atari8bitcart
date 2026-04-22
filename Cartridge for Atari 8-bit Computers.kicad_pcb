@@ -5572,19 +5572,6 @@
 		(layer "Edge.Cuts")
 		(uuid "42851e30-52c6-41b5-89f6-a8a09c4ee0d4")
 	)
-	(gr_text "JLCJLCJLCJLC"
-		(at 124.968 84.201 90)
-		(layer "F.SilkS")
-		(uuid "48ebd1a6-a6f6-4ae1-ae45-b9680e7d54ae")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.15)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-	)
 	(gr_text "Low Bank $8000-$9FFF"
 		(at 90.297 58.166 0)
 		(layer "F.SilkS")
