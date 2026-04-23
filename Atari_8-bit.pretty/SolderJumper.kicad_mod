@@ -8,7 +8,7 @@
 	(property "Reference" "REF**"
 		(at -1.508812 0 0)
 		(layer "F.SilkS")
-		(uuid "b7a0a576-e3a1-4862-9c16-7cf012987843")
+		(uuid "6d2b029b-df98-46e0-b4a1-9ee4b2efb36e")
 		(effects
 			(font
 				(size 1 1)
@@ -20,7 +20,7 @@
 	(property "Value" "VAL**"
 		(at 2 0 0)
 		(layer "F.Fab")
-		(uuid "c281740b-a1e8-4fad-98b6-bce089349e39")
+		(uuid "817d3faa-fd75-4af7-8a36-e65a41e5611e")
 		(effects
 			(font
 				(size 0.5 0.5)
@@ -35,7 +35,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "9935f552-df71-4279-a9ba-128da06d39cd")
+		(uuid "e32cc075-7def-49e4-b2ca-d2ccdb552a42")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -48,7 +48,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "8219f8dd-ed2c-4de9-b648-1075ce9d570a")
+		(uuid "0af5f44d-ca9e-4682-a2b1-0f9ef902185f")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -60,7 +60,7 @@
 	(sheetname "/")
 	(sheetfile "Atari 8-bit Cartridge.kicad_sch")
 	(zone_connect 1)
-	(attr exclude_from_bom allow_soldermask_bridges)
+	(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_rect
 		(start -0.15 -0.75)
@@ -71,7 +71,7 @@
 		)
 		(fill yes)
 		(layer "F.Mask")
-		(uuid "d7685774-cabd-4c82-8d38-4e115ffde899")
+		(uuid "17748ada-45b2-4423-96bc-5df4f24084d4")
 	)
 	(fp_line
 		(start -1.4 0.3)
@@ -81,7 +81,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "ee66c0d5-eac1-49d7-91d7-0a0d3fe64416")
+		(uuid "82bfabb0-3455-4d23-9ade-06549ad7a853")
 	)
 	(fp_line
 		(start -0.7 -1)
@@ -91,7 +91,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "63ea92c2-3dcd-43bf-bd97-9010aa6c599d")
+		(uuid "83b03b91-a65b-4ed8-95e0-a32a13e022b8")
 	)
 	(fp_line
 		(start 0.7 1)
@@ -101,7 +101,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "8972f65f-d80d-431c-92bd-4e93b27d669d")
+		(uuid "7173b64d-f6f1-42e9-a88b-0101981b3820")
 	)
 	(fp_line
 		(start 1.4 -0.3)
@@ -111,7 +111,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "de8eadf5-2bb7-455b-bc94-7b1639743816")
+		(uuid "3d048f5b-d1e6-4aa9-8434-daadd62c3c0b")
 	)
 	(fp_arc
 		(start -1.4 -0.3)
@@ -122,7 +122,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "c78dfdb5-524c-46c7-a73c-b6a6db9646e3")
+		(uuid "0b450f86-889a-4f0c-9ede-0a2ed0a190be")
 	)
 	(fp_arc
 		(start -0.7 1)
@@ -133,7 +133,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "6c9bdfb7-62b7-4e9e-be2b-67866df14363")
+		(uuid "679fe7d1-f522-4560-bfb2-d0344d6a80e7")
 	)
 	(fp_arc
 		(start 0.7 -1)
@@ -144,7 +144,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "67b4a7ed-81fe-4916-8ea3-9e024853b421")
+		(uuid "09a2b8f6-55cc-429a-b8d3-2a6a897f80bc")
 	)
 	(fp_arc
 		(start 1.4 0.3)
@@ -155,7 +155,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "c6ef1abe-fa9e-4a76-b92b-73bdb9509a7d")
+		(uuid "946bd7e3-b8ec-4174-b409-70bc51774e3b")
 	)
 	(fp_line
 		(start -1.65 -1.25)
@@ -165,7 +165,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "f0567cb8-5388-4498-8661-ff3c836c9627")
+		(uuid "cdbe3a59-83a9-414b-983b-b23b9e676c2c")
 	)
 	(fp_line
 		(start -1.65 -1.25)
@@ -175,7 +175,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "6c7885f5-053e-4d5e-a3c5-84874f1702b5")
+		(uuid "d2134b1c-06b7-40f4-a98e-371bfe998d9b")
 	)
 	(fp_line
 		(start 1.65 1.25)
@@ -185,7 +185,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "31ece3be-05d2-46b9-8271-804d2c8f0ed0")
+		(uuid "c24778e8-9256-4701-8a26-b4da8f28cbc4")
 	)
 	(fp_line
 		(start 1.65 1.25)
@@ -195,7 +195,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "82c6436e-5ba8-4059-8967-b64ad8fd60d3")
+		(uuid "87b00b61-9fff-4e23-a181-9858bbf73dff")
 	)
 	(pad "1" smd custom
 		(at -0.65 0)
@@ -228,7 +228,7 @@
 				(fill yes)
 			)
 		)
-		(uuid "c9c8c3c8-9cae-48a3-95ee-59c97cd3ff06")
+		(uuid "b4a4f251-1cbc-45f3-a2ba-0fa78e3484a0")
 	)
 	(pad "2" smd custom
 		(at 0.65 0)
@@ -261,7 +261,7 @@
 				(fill yes)
 			)
 		)
-		(uuid "8d3f3274-8967-46e4-9d69-bdacf80784c3")
+		(uuid "f6acf980-72fd-46f0-b662-433045bbce43")
 	)
 	(embedded_fonts no)
 )
