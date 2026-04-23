@@ -122,8 +122,6 @@ jobs:
             --format csv \
             --units mm \
             --side both \
-            --smd-only \
-            --exclude-fp-th \
             --exclude-dnp \
             "$BOARD_FILE"
 
