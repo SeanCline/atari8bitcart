@@ -14,10 +14,10 @@ Configurable Atari 8-bit cartridge PCB for the Atari 400/800/XL/XE line of home 
 ## Hardware Summary
 
 - **U0**: accepts either:
-  - a 2764-compatible (8 KB) PROM for 8 KB and 8 KB + 8 KB configurations.
+  - a 2764-compatible (8 KB) PROM for both 8KB and 8KB+8KB configurations.
   - a 27128-compatible (16 KB) PROM for 16 KB configurations.
-- **U1**: accepts a 2764-compatible (8 KB) PROM in 8 KB and 8 KB + 8 KB configurations.
-- **U2**: `74AHCT1G08` single AND gate used to merge the two chip-enable lines (/S4 and /S5) into a single signal.
+- **U1**: accepts a 2764-compatible (8 KB) PROM in the 8KB+8KB configuration.
+- **U2**: `74AHCT1G08` single AND gate used to merge the two chip-enable lines (/S4 and /S5) into a single signal for the 16KB configuration.
 - **C0 / C1**: 100 nF bypass capacitors.
 
 ## Jumper Configuration
@@ -25,6 +25,8 @@ Configurable Atari 8-bit cartridge PCB for the Atari 400/800/XL/XE line of home 
 The jumpers are organized into sections, one for each supported configuration.
 
 > ℹ️ **Bridge only the jumpers required for the configuration you intend to use.**
+
+![Compoenent and jumper configurations](images/configurations.svg)
 
 ## Releases
 
